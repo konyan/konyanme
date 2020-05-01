@@ -5722,7 +5722,7 @@ module.exports = content.locals || {};
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblogs%2F%5Bid%5D&absolutePagePath=%2FUsers%2Fkonyan%2FDevelopment%2Fmy-blog%2Fcode%2Fmy-blog%2Fpages%2Fblogs%2F%5Bid%5D.js&hotRouterUpdates=true ***!
   \***********************************************************************************************************************************************************************************************/
@@ -5745,5 +5745,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

@@ -42,6 +42,7 @@ function Navigation() {
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/",
+    as: "",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -64,6 +65,7 @@ function Navigation() {
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/projects",
+    as: "/projects",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -86,6 +88,7 @@ function Navigation() {
     }
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/resume",
+    as: "/resume",
     __self: this,
     __source: {
       fileName: _jsxFileName,
