@@ -1,0 +1,22 @@
+.header {
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+
+  &_first,
+  &_second {
+    color: black;
+    display: block;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    font-size: 68px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  hr {
+    width: 40%;
+    margin: 1rem auto;
+    height: 2px;
+  }
+}

@@ -1,15 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import styles from "./projects.module.scss"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Projects = () => (
   <Layout>
-    <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <SEO title="Projects" />
+    <div className={styles.header}>
+      <h2 className={styles.header_first}>Who i am</h2>
+      <hr />
+      <h2 className={styles.header_second}>(today)</h2>
+    </div>
   </Layout>
 )
 

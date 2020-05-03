@@ -8,7 +8,9 @@ const Header = () => (
   <header className={styles.container}>
     <nav className={styles.navbar}>
       <div className={styles.navbar__header}>
-        <img src={logo} alt="konyan's blog logo" />
+        <Link to="/">
+          <img src={logo} alt="konyan's blog logo" />
+        </Link>
       </div>
       <ul className={styles.navbar__right}>
         <li className={styles.navbar__right_item}>

@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import github from "../images/github.svg"
 import linkedin from "../images/linkedin.svg"
@@ -12,14 +11,14 @@ const Footer = () => (
       </p>
       <ul className={styles.footer__right}>
         <li className={styles.footer__right_item}>
-          <Link>
+          <a href="https://github.com/konyan" target="blank">
             <img src={github} alt="ko nyan's github" />
-          </Link>
+          </a>
         </li>
         <li className={styles.footer__right_item}>
-          <Link>
+          <a href="https://www.linkedin.com/in/nyanlintun/" target="blank">
             <img src={linkedin} alt="ko nyan's linkedin" />
-          </Link>
+          </a>
         </li>
       </ul>
     </div>
