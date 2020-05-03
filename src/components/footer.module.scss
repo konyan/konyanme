@@ -1,0 +1,42 @@
+.f_contianer {
+  width: 100%;
+  background-color: #424242;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  width: 90%;
+  margin: auto;
+  display: flex;
+
+  &__builder {
+    color: blanchedalmond;
+    padding: 1rem 0;
+    flex: 4;
+  }
+
+  &__right {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &_item {
+      width: 24px;
+      margin: 0 1rem;
+    }
+  }
+}
+
+a {
+  background-image: none;
+  text-shadow: none;
+}
+
+a:hover,
+a:active {
+  background-image: none;
+  text-shadow: none;
+}
