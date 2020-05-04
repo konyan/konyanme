@@ -1,10 +1,40 @@
 .container {
-  min-width: 320px;
-  padding: 0.5rem;
+  min-width: 300px;
+  padding: 0;
+  border-radius: 2px;
+  margin: 0.5rem;
+  height: 300px;
   flex: 1;
+  cursor: pointer;
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.4);
   .image__container {
+    &_img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .body__container {
+    margin-left: 0.75rem;
+
+    &__skills {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      margin: 0.5rem 0;
+      &_item {
+        background-color: #424242;
+        padding: 0.5rem 0.75rem;
+        margin-right: 0.75rem;
+        color: white;
+        font-size: 12px;
+        border-radius: 2px;
+      }
+    }
+    &_title {
+      margin: 0.75rem 0;
+      font-size: 18px;
+      font-weight: 500;
+    }
   }
 }
