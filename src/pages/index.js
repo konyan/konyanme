@@ -1,20 +1,25 @@
 import React from "react"
 import { Link } from "gatsby"
-
-import Layout from "../components/layout"
 import Image from "../components/image"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styles from "./index.module.scss"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className={styles.header__container}>
+      <h2 className={styles.header__container_title}>Keep Moving Forward</h2>
+      <div className={styles.header__container_bio}>
+        <Image />
+        <div className={styles.header__container_bio_left}>
+          <p>
+            Written by Nyan Lin Tun who lives and remote developer in Myanmar.
+          </p>
+          <small>passionate about code, design, startups and technology</small>
+        </div>
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
