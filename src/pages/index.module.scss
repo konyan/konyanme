@@ -1,15 +1,15 @@
-.header__container {
+.container {
   width: 80%;
   text-align: center;
   margin: 2rem auto;
 
-  &_title {
+  .header__title {
     font-size: 32px;
     font-style: italic;
     font-weight: 400;
   }
 
-  &_bio {
+  .header__bio {
     margin: 2rem;
     display: flex;
     flex-direction: row;
@@ -34,5 +34,11 @@
         font-weight: 400;
       }
     }
+  }
+
+  .blogs__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 }
