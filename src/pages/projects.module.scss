@@ -1,5 +1,5 @@
 .header {
-  margin: 3rem auto;
+  margin: 1rem auto;
   padding: 2rem;
   text-align: center;
 
@@ -19,4 +19,28 @@
     margin: 1rem auto;
     height: 2px;
   }
+}
+
+.skills {
+  width: 40%;
+  text-align: center;
+  margin: 1rem auto 2rem;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    &_item {
+      flex: 1;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 800px;
 }

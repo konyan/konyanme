@@ -137,5 +137,26 @@ html,
 body {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
+}
+
+.active {
+  background-color: #323232;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 1.5px;
+  font-weight: 550;
+}
+
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  outline: 1px solid slategrey;
 }

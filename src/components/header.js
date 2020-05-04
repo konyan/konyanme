@@ -14,17 +14,17 @@ const Header = () => (
       </div>
       <ul className={styles.navbar__right}>
         <li className={styles.navbar__right_item}>
-          <Link to="/" activeClassName={styles.active}>
+          <Link to="/" activeClassName="active">
             Home
           </Link>
         </li>
         <li className={styles.navbar__right_item}>
-          <Link to="/projects" activeClassName={styles.active}>
+          <Link to="/projects" activeClassName="active">
             Projects
           </Link>
         </li>
         <li className={styles.navbar__right_item}>
-          <Link to="/resume" activeClassName={styles.active}>
+          <Link to="/resume" activeClassName="active">
             Resume
           </Link>
         </li>
