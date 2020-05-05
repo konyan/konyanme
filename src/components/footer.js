@@ -16,7 +16,7 @@ const Footer = () => (
           </a>
         </li>
         <li className={styles.footer__right_item}>
-          <a href="https://www.linkedin.com/in/nyanlintun/" target="blank">
+          <a href="https://linkedin.com/in/nyanlintun" target="blank">
             <img src={linkedin} alt="ko nyan's linkedin" />
           </a>
         </li>

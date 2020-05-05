@@ -36,7 +36,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && echo 'profile.konyan.me' > CNAME && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && echo 'profile.konyan.me' > public/CNAME && gh-pages -d public && scp public/* root@157.230.248.20:/var/www/konyan.me/html/ ",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

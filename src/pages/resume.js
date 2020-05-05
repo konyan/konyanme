@@ -7,8 +7,11 @@ import SEO from "../components/seo"
 const Resume = () => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <p>
+      We’ll be back soon! Sorry for the inconvenience but we’re performing some
+      maintenance at the moment. If you need to you can always contact us,
+      otherwise we’ll be back online shortly! — KoNyan
+    </p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
