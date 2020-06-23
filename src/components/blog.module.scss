@@ -14,9 +14,9 @@
     flex: 1;
     font-size: 12px;
     font-weight: 300;
-    color: #626262;
+    color: #424242;
     opacity: 0.7;
-    padding: 0.3rem 0;
+    padding: 0.6rem 0;
   }
 
   .description {
@@ -28,9 +28,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-line-clamp: 10; /* number of lines to show */
     -webkit-box-orient: vertical;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.7rem;
   }
 
   .footer{

@@ -1,16 +1,25 @@
 .container {
   width: 100%;
+
+  @media (min-width: 320px) and (max-width: 767px) {
+      //CSS
+      .navbar{
+        width: 94% !important;
+      }
+  }
+
   .navbar {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 1rem 0;
     display: flex;
+    position: relative;
     flex-direction: row;
-    justify-content: center;
+
 
     .navbar__header {
-      flex: 4;
-      display: flex;
+      flex: 1;
+      text-align: left;
     }
 
     .navbar__right {
@@ -18,11 +27,8 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-
-      &_item {
-        flex: 1;
-        text-align: center;
-      }
+      text-align: right;
+      justify-content: flex-end;
     }
   }
 }
@@ -34,19 +40,24 @@ li a {
   border-bottom: none;
   background-image: none;
   text-shadow: none;
-}
-
-li a:hover,
-li a:active {
-  background-color: #323232;
-  color: white;
   padding: 0.4rem 0.6rem;
   border-radius: 1.5px;
-  font-weight: 550;
-  border-bottom: none;
-  background-image: none;
-  text-shadow: none;
+  transition: 0.3s;
+
+  &:hover {
+    background: transparent;
+    color: white;
+    box-shadow: inset 90px 0 0 0 #323232;
+  }
+
+
 }
+
+li:not(:last-child){
+    margin-right: 1rem;
+}
+
+
 
 /*
   ##Device = Desktops
@@ -80,43 +91,7 @@ li a:active {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   //CSS
-  .navbar__header {
-    flex: 2 !important;
-  }
-
-  .navbar__right {
-    flex: 1 !important;
-  }
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  //CSS
-  .navbar__header {
-    flex: 1 !important;
-  }
-
-  .navbar__right {
-    flex: 1 !important;
-  }
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  //CSS
-  .navbar__header {
-    flex: 1 !important;
-  }
-
-  .navbar__right {
-    flex: 2 !important;
+  .navbar{
+    width: 84% !important;
   }
 }
