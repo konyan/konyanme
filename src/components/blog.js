@@ -3,13 +3,15 @@ import React from "react"
 import styles from "./blog.module.scss"
 import { Link } from "gatsby"
 
-const Card = ({ title, date, description }) => {
+const Card = ({ title, date, description, path }) => {
   return (
     <article className={styles.container}>
-      <h4 className={styles.title}>{title}</h4>
+      <Link to={path}>
+        <h4 className={styles.title}>{title}</h4>
+      </Link>
       <date className={styles.date}>{date}</date>
       <p className={styles.description}>{description}</p>
-      <Link className={styles.readmore}>
+      <Link className={styles.readmore} to={path}>
         <span>Read more >></span>
       </Link>
     </article>
