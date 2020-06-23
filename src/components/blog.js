@@ -13,9 +13,9 @@ const Card = ({ title, date, description, path }) => {
       <p className={styles.description}>{description}</p>
       <div className={styles.footer}>
         <div className={styles.tags}>
-          <strong>css</strong>
-          <strong>css</strong>
-          <strong>css</strong>
+          <strong className={styles.tag}>css</strong>
+          <strong className={styles.tag}>css</strong>
+          <strong className={styles.tag}>css</strong>
         </div>
         <Link className={styles.readmore} to={path}>
           <span>Read more</span>
