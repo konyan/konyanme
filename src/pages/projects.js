@@ -22,17 +22,31 @@ const projects = [
   },
   {
     image:
-      "https://cdn.pixabay.com/photo/2017/04/03/15/52/love-you-2198772__340.png",
-    title: "My Budget App",
+      "https://github.com/konyan/myanmar-restaurant/raw/development/dist/img/project-img.png",
+    title: "Myanmar Restaurant App",
     skills: ["Javascript", "HTML", "CSS"],
-    github: "https://github.com/konyan/js-budget",
+    github: "https://github.com/konyan/myanmar-restaurant",
   },
+  {
+    image:
+      "https://github.com/konyan/todo-project/raw/development/dist/img/todo.png",
+    title: "My Todo List App",
+    skills: ["Javascript", "HTML", "CSS"],
+    github: "https://github.com/konyan/todo-project",
+  },
+  {
+    image:
+      "https://github.com/konyan/weather-app/raw/development/dist/img/project-bg.png",
+    title: "My Weather App",
+    skills: ["Javascript", "HTML", "CSS"],
+    github: "https://github.com/konyan/weather-app",
+  }
 ]
 
 const Projects = () => {
   return (
     <Layout>
-      <SEO title="Projects" />
+      <SEO title="Projects" keywords={["konyan's projects"]} />
       <div className={styles.header}>
         <h2 className={styles.header_first}>Who i am</h2>
         <hr />
