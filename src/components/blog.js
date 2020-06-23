@@ -9,11 +9,19 @@ const Card = ({ title, date, description, path }) => {
       <Link to={path}>
         <h4 className={styles.title}>{title}</h4>
       </Link>
-      <date className={styles.date}>{date}</date>
+      <small className={styles.date}>{date}</small>
       <p className={styles.description}>{description}</p>
-      <Link className={styles.readmore} to={path}>
-        <span>Read more >></span>
-      </Link>
+      <div className={styles.footer}>
+        <div className={styles.tags}>
+          <strong>css</strong>
+          <strong>css</strong>
+          <strong>css</strong>
+        </div>
+        <Link className={styles.readmore} to={path}>
+          <span>Read more</span>
+        </Link>
+      </div>
+
     </article>
   )
 }

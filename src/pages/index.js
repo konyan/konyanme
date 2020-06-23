@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import Image from "../components/image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,15 +8,23 @@ import Blog from "../components/blog"
 
 const blogsQuery = graphql`
   query{
-    allMarkdownRemark(sort: {fields : [frontmatter___date], order: DESC}) {
+    allMarkdownRemark( sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000) {
       edges {
         node {
           id
           frontmatter {
             author
             title
-            date(formatString: "MMM Do YYYY")
+            date(formatString: "MMM Do, YYYY")
             path
+            image{
+              childImageSharp{
+                fluid(maxWidth: 600){
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           excerpt
         }
